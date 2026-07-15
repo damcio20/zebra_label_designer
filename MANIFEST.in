@@ -1,0 +1,4 @@
+include README.md
+include license.txt
+recursive-include zebra_label_designer *.css *.csv *.html *.ico *.js *.json *.md *.png *.py *.svg *.txt
+recursive-exclude zebra_label_designer *.pyc

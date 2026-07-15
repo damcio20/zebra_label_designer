@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "name": "Etykieta produktu 100x50",
+  "source_doctype": "Item",
+  "label": {
+    "width_mm": 100,
+    "height_mm": 50,
+    "dpi": 203,
+    "darkness": 15,
+    "speed": 4,
+    "copies": 1,
+    "home_x_mm": 0,
+    "home_y_mm": 0,
+    "grid_mm": 1,
+    "snap": true,
+    "show_grid": true
+  },
+  "elements": [
+    {
+      "id": "sample-heading",
+      "type": "text",
+      "x": 5,
+      "y": 4,
+      "width": 90,
+      "height": 8,
+      "rotation": 0,
+      "visible": true,
+      "text": "{{ doc.item_name }}",
+      "font_size_mm": 5,
+      "font_weight": "bold",
+      "align": "left"
+    },
+    {
+      "id": "sample-index",
+      "type": "text",
+      "x": 5,
+      "y": 15,
+      "width": 55,
+      "height": 7,
+      "rotation": 0,
+      "visible": true,
+      "text": "Indeks: {{ doc.item_code }}",
+      "font_size_mm": 3.5,
+      "font_weight": "normal",
+      "align": "left"
+    },
+    {
+      "id": "sample-frame",
+      "type": "rectangle",
+      "x": 2,
+      "y": 2,
+      "width": 96,
+      "height": 46,
+      "rotation": 0,
+      "visible": true,
+      "stroke_width_mm": 0.4,
+      "fill": false
+    },
+    {
+      "id": "sample-divider",
+      "type": "line",
+      "x": 5,
+      "y": 26,
+      "width": 90,
+      "height": 0,
+      "rotation": 0,
+      "visible": true,
+      "stroke_width_mm": 0.4
+    }
+  ],
+  "sample_data": {
+    "doc": {
+      "item_name": "Przykładowy produkt",
+      "item_code": "MAR-0001"
+    }
+  }
+}

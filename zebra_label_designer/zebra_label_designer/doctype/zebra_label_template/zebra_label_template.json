@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:template_name",
+ "creation": "2026-07-10 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "template_name",
+  "is_active",
+  "label_settings_section",
+  "label_width_mm",
+  "label_height_mm",
+  "printer_dpi",
+  "settings_column",
+  "source_doctype",
+  "design_version",
+  "design_section",
+  "design_json",
+  "generated_zpl"
+ ],
+ "fields": [
+  {
+   "fieldname": "template_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Template name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Active"
+  },
+  {
+   "fieldname": "label_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Label settings"
+  },
+  {
+   "default": "100",
+   "fieldname": "label_width_mm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Width (mm)",
+   "precision": "2"
+  },
+  {
+   "default": "50",
+   "fieldname": "label_height_mm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Height (mm)",
+   "precision": "2"
+  },
+  {
+   "default": "203",
+   "fieldname": "printer_dpi",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Printer DPI",
+   "options": "203\n300\n600"
+  },
+  {
+   "fieldname": "settings_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source_doctype",
+   "fieldtype": "Link",
+   "label": "Source DocType",
+   "options": "DocType"
+  },
+  {
+   "default": "1",
+   "fieldname": "design_version",
+   "fieldtype": "Int",
+   "label": "Design version",
+   "read_only": 1
+  },
+  {
+   "fieldname": "design_section",
+   "fieldtype": "Section Break",
+   "label": "Design data"
+  },
+  {
+   "fieldname": "design_json",
+   "fieldtype": "Code",
+   "label": "Design JSON",
+   "options": "JSON"
+  },
+  {
+   "fieldname": "generated_zpl",
+   "fieldtype": "Code",
+   "label": "Generated ZPL",
+   "options": "Text",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-10 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Zebra Label Designer",
+ "name": "Zebra Label Template",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "template_name",
+ "states": [],
+ "track_changes": 1
+}

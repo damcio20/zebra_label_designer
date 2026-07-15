@@ -1,0 +1,30 @@
+{
+ "content": null,
+ "creation": "2026-07-10 00:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "printer",
+ "idx": 0,
+ "modified": "2026-07-14 04:32:44.205980",
+ "modified_by": "Administrator",
+ "module": "Zebra Label Designer",
+ "name": "zebra-label-editor",
+ "owner": "Administrator",
+ "page_name": "zebra-label-editor",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Stock Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Zebra Label Designer"
+}
